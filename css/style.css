@@ -3,7 +3,8 @@
 
 :root{
     --ghost-white: #f8f9fd;
-    --green-bush: #539963;
+    --green-bush: #468354;
+    --green-bg:#8fbfa5;
     --granite-gray: #626a6a;
     --baltic-sea: #33383c;
     --trans: all 0.5s ease-in-out;
@@ -311,7 +312,7 @@ header .container{
     margin: 1rem 0;
 }
 .product-img{
-    background: var(--ghost-white);
+    background: var(--green-bg);
     padding: 3rem 0;
     height: 350px;
     overflow: hidden;
