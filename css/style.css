@@ -1,24 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
-:root{
-    --ghost-white: #f8f9fd;
-    --green-bush: #5c996a;
-    --green-bg:#b3d6c3;
-    --granite-gray: #626a6a;
-    --baltic-sea: #33383c;
-    --trans: all 0.5s ease-in-out;
-}
-
+@import url('./variables/variables.css');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;
+    
 }
 body{
     line-height: 1.5;
     font-weight: 400;
+    font-family: 'Barlow', sans-serif;
 }
 img{
     display: block;
@@ -245,14 +236,17 @@ header .container{
 }
 
 
-/* banner  */
+/* banner */
 .banner{
     flex: 1;
     padding-top: 6rem;
     text-align: center;
 }
 .banner > div{
-    margin: 6rem 0;
+    margin: 7rem 0;
+}
+.banner h1{
+    white-space: nowrap;
 }
 .banner .text{
     font-weight: 500;

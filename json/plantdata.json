@@ -21,27 +21,30 @@
         "name" : "Anthurium magnificum",
         "category" : "Anthurium",
         "price" : "23.75",
-        "imgSrc" : "images/plantdata/anthurium.png"
+        "imgSrc" : "images/plantdata/anthurium2.png"
     },
     {
+       
         "name" : "Bamboo",
         "category" : "Bamboo",
         "price" : "50.00",
         "imgSrc" : "images/plantdata/bamboo.png"
     },
     {
+        
         "name" : "Bonzai",
         "category" : "Shrub",
         "price" : "200.50",
         "imgSrc" : "images/plantdata/bonzai.png"
     },
     {
+      
         "name" : "Ferocactus",
         "category" : "Cactus",
         "price" : "5.50",
         "imgSrc" : "images/plantdata/cactus.png"
     },
-    {
+    {  
         "name" : "Dragon Plant",
         "category" : "Dracaena ",
         "price" : "25.00",
@@ -117,6 +120,6 @@
         "name" : "Anthurium",
         "category" : "Aunthurium",
         "price" : "288.99",
-        "imgSrc" : "images/plantdata/anthurium2.png"
+        "imgSrc" : "images/plantdata/anthurium3.png"
     }
 ]

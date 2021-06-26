@@ -40,7 +40,7 @@ function updateCartInfo(){
 
 // load product items content form JSON file
 function loadJSON(){
-    fetch('plantdata.json')
+    fetch('../json/plantdata.json')
     .then(response => response.json())
     .then(data =>{
         let html = '';

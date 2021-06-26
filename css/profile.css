@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(variables/variables.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Barlow', sans-serif;
+}
+
+body{
+    background-color: #efefef;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: var(--green-bush);
+    /*clip-path: circle(400px at 50% -48.5%); */
+}
+
+.header{
+    position: relative;
+    height: 300px;
+}
+
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .image{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    /* background: url('img/profile.jpg') no-repeat center / cover; */
+    border: 4px solid var(--granite-gray);
+    margin-bottom: 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image .hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--green-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: .5s;
+    opacity: 0;
+}
+
+.image:hover .hover{
+    opacity: 1;
+}
+
+.hover.active{
+    opacity: 1;
+}
+
+.user-name{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.email{
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.2rem;
+    opacity: .8;
+    color: #fff;
+}
+
+.content{
+    display: flex;
+    padding: 1.7rem 2.5rem 2.6rem 2.5rem;
+}
+
+.right{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 2.1rem;
+}
+
+.number{
+    font-size: 2.1rem;
+    font-weight: 200;
+    color: #333;
+    line-height: 1.2;
+}
+
+.number-title{
+    font-size: .55rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.title{
+    position: relative;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0 0 3px 0;
+    margin-bottom: .9rem;
+    display: inline-block;
+}
+
+.title:after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background-color: #555;
+    bottom: 0;
+    left: 0;
+}
+
+.text{
+    color: #666;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.buttons-wrap{
+    display: flex;
+    margin-top: 30px;
+}
+
+.back-wrap, .logout-wrap{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.back-wrap, .logout-wrap:hover{
+    flex: 5;
+}
+
+.back{
+    padding: 9.6px 0;
+    width: 100%;
+    background: var(--green-bush);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* border-radius: 18.1px; */
+    margin-right: 3px;
+}
+
+.logout{
+    padding: 7.6px 0;
+    width: 100%;
+    border: 2px solid var(--green-bush);
+    color: var(--green-bush);
+    text-decoration: none;
+    text-align: center;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 3px;
+    /* border-radius: 18.1px; */
+}
+
+
+
+@media (max-width: 410px){
+    .content{
+        flex-direction: column;
+    }
+
+    .right{
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 370px){
+    .header{
+        height: 230px;
+    }
+
+    .card:before{
+        clip-path: circle(400px at 50% -74.5%);
+        height: 230px;
+    }
+
+    .hamburger-menu{
+        width: 16px;
+        height: 12px;
+        top: 1.1rem;
+        left: 1.5rem;
+    }
+
+    .mail{
+        font-size: 1.1rem;
+        top: .75rem;
+        right: 1.5rem;
+    }
+
+    .main .image{
+        width: 90px;
+        height: 90px;
+        border-width: 3px;
+    }
+
+    .name, .sub-name{
+        font-size: 1rem;
+    }
+
+    .content{
+        padding: 1.2rem 1.8rem 1.8rem 1.8rem;
+    }
+
+    .number{
+        font-size: 1.8rem;
+    }
+
+    .number-title{
+        font-size: .4rem;
+    }
+
+    .right{
+        padding-top: 1rem;
+    }
+
+    .title{
+        font-size: .9rem;
+        margin-bottom: .5rem;
+    }
+
+    .text{
+        font-size: .8rem;
+    }
+
+    .icons-container{
+        padding: .5rem 0;
+    }
+
+    .icon{
+        font-size: 1.1rem;
+    }
+
+    .follow{
+        padding: 7.6px 0;
+        border-radius: 14.6px;
+        font-size: .6rem;
+    }
+
+    .share{
+        padding: 5.6px 0;
+        border-radius: 14.6px;
+        font-size: .6rem;
+    }
+}
