@@ -4,6 +4,9 @@
 
 ### Plat Zay is the name of my Website.A plant ecommerce for minimalist.
 
+First of all:\
+Please use live server extension from Vscode\
+
 Predefined data are:\
 email: linn@gmail.com\
 password: john123\
