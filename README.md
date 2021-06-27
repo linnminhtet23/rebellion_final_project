@@ -1,6 +1,6 @@
 # rebellion_final_project
 
-## HI I'm Linn Min Htet(WDF-3123)
+## HI I'm Linn Min Htet (RWD-1141)
 
 ### Plat Zay is the name of my Website.A plant ecommerce for minimalist.
 
@@ -19,6 +19,7 @@ Screen sorting:\
 index.html(login)->admin_panel.html (if you click <- back button) -> home.html
 
 
+##Please Enjoy My Project
 
 
 
