@@ -11,6 +11,10 @@ Predefined data are:\
 email: linn@gmail.com\
 password: john123
 
+Plant data are:\
+plantdata.json
+
+
 Screen sorting:\
 index.html(login)->admin_panel.html (if you click <- back button) -> home.html
 
