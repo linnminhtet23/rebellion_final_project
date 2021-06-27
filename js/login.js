@@ -48,7 +48,7 @@ function submitFunction(){
     console.log('correct email and password');
     window.localStorage.setItem('email', JSON.stringify(email));
     window.localStorage.setItem('password', JSON.stringify(password));
-    location.replace('profile.html');
+    location.replace('admin_panel.html');
    
     
   }

@@ -1,122 +1,139 @@
 [
     {
+        "id":1,
         "name" : "Alovera",
         "category" : "Succulent",
         "price" : "50.25",
         "imgSrc" : "images/plantdata/aloe.png"
     },
     {
+        "id":2,
         "name" : "Aloevera Succulent",
         "category" : "Succulent",
         "price" : "102.00",
         "imgSrc" : "images/plantdata/aloesucculent.png"
     },
     {
+        "id":3,
         "name" : "Anthurium forgetii",
         "category" : "Anthurium",
         "price" : "15.00",
         "imgSrc" : "images/plantdata/anthurium.png"
     },
     {
+        "id":4,
         "name" : "Anthurium magnificum",
         "category" : "Anthurium",
         "price" : "23.75",
         "imgSrc" : "images/plantdata/anthurium2.png"
     },
     {
-       
+        "id":5,
         "name" : "Bamboo",
         "category" : "Bamboo",
         "price" : "50.00",
         "imgSrc" : "images/plantdata/bamboo.png"
     },
     {
-        
+        "id":6,
         "name" : "Bonzai",
         "category" : "Shrub",
         "price" : "200.50",
         "imgSrc" : "images/plantdata/bonzai.png"
     },
     {
-      
+        "id":7,
         "name" : "Ferocactus",
         "category" : "Cactus",
         "price" : "5.50",
         "imgSrc" : "images/plantdata/cactus.png"
     },
     {  
+        "id":8,
         "name" : "Dragon Plant",
         "category" : "Dracaena ",
         "price" : "25.00",
         "imgSrc" : "images/plantdata/dragonplant.png"
     },
     {
+        "id":9,
         "name" : "Lemon",
         "category" : "Citrus",
         "price" : "49.00",
         "imgSrc" : "images/plantdata/lemon.png"
     },
     {
+        "id" :10,
         "name" : "Mint Flower",
         "category" : "Mentha ",
         "price" : "60.99",
         "imgSrc" : "images/plantdata/mint.png"
     },
     {
+        "id":11,
         "name" : "Olive Tree",
         "category" : "Olea ",
         "price" : "69.20",
         "imgSrc" : "images/plantdata/olive-tree.png"
     },
     {
+        "id":12,
         "name" : "Palm Tree",
         "category" : "Palms ",
         "price" : "224.99",
         "imgSrc" : "images/plantdata/palmtree.png"
     },
     {
+        "id":13,
         "name" : "Pine Plant",
         "category" : "Pine",
         "price" : "90.25",
         "imgSrc" : "images/plantdata/olive-tree.png"
     },
     {
+        "id":14,
         "name" : "Rubber Plant",
         "category" : "Rubber",
         "price" : "99.99",
         "imgSrc" : "images/plantdata/rubberplant.png"
     },
     {
+        "id":15,
         "name" : "Snake Plant",
         "category" : "Dracaena",
         "price" : "75.80",
         "imgSrc" : "images/plantdata/snakeplant.png"
     },
     {
+        "id":16,
         "name" : "Succulent",
         "category" : "Succulent",
         "price" : "100.50",
         "imgSrc" : "images/plantdata/succulent.png"
     },
     {
+        "id":17,
         "name" : "Tree Ball",
         "category" : "Shrub",
         "price" : "159.00",
         "imgSrc" : "images/plantdata/treeball.png"
     },
     {
+        "id":18,
         "name" : "White Plant",
         "category" : "White Plant",
         "price" : "187.45",
         "imgSrc" : "images/plantdata/zanzibar-gem.png"
     },
     {
+        "id":19,
         "name" : "Anthurium",
         "category" : "Anthurium",
         "price" : "322.50",
         "imgSrc" : "images/plantdata/anthurium2.png"
     },
     {
+        "id":20,
         "name" : "Anthurium",
         "category" : "Aunthurium",
         "price" : "288.99",
