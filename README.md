@@ -5,7 +5,7 @@
 ### Plat Zay is the name of my Website.A plant ecommerce for minimalist.
 
 predefined data are
-email: linn@gmai.com
+email: linn@gmail.com
 password: john123
 
 
