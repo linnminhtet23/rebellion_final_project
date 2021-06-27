@@ -61,14 +61,14 @@ img{
     transform: rotate(180deg);
 }
 /*=== Form ===*/
-.form #login-error-msg-holder {
+.form #error {
     position: relative;
     width: 100%;
     height: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
     color: #8a0000;
     border: 1px solid #8a0000;
@@ -79,7 +79,7 @@ img{
     opacity: 0;
   }
   
-  .form #login-error-msg {
+  .form #error {
     width: 100%;
     text-align: center;
     margin: 0;
@@ -92,9 +92,9 @@ img{
     opacity: 0;
   }
   
-  .form #error-msg-second-line {
+  /* .form #error-msg-second-line {
     display: block;
-  }
+  } */
   
 .form{
     height: 100vh;

@@ -29,17 +29,17 @@
     },
     {
         "id":5,
-        "name" : "Bamboo",
-        "category" : "Bamboo",
-        "price" : "50.00",
-        "imgSrc" : "images/plantdata/bamboo.png"
+        "name" : "Grass Tree",
+        "category" : "Grass",
+        "price" : "288.99",
+        "imgSrc" : "images/plantdata/grass-tree.png"
     },
     {
         "id":6,
-        "name" : "Bonzai",
-        "category" : "Shrub",
-        "price" : "200.50",
-        "imgSrc" : "images/plantdata/bonzai.png"
+        "name" : "Christmas Tree",
+        "category" : "Yule",
+        "price" : "288.99",
+        "imgSrc" : "images/plantdata/christmas-tree.png"
     },
     {
         "id":7,

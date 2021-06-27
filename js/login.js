@@ -30,12 +30,23 @@ inputs.forEach((input) => {
 });
 /*===submit==*/
 loginbtn = document.getElementById("login-button");
-loginbtn.addEventListener('click',()=>{
-  submitFunction();
-})
-function submitFunction(){
+const errorElement = document.getElementById("error");
+
+loginbtn.addEventListener('click',(e)=>{
   email = document.getElementById('email').value;
   password = document.getElementById('password').value;
+  let messages =[];
+  if (email === '' || email == null) {
+    messages.push('email is required');
+    errorElement.innerText = messages.join(",");
+  }
+
+  else if (password.length <= 6) {
+    messages.push('Password must be longer than 6 characters');
+    errorElement.innerText = messages.join(",");
+  }
+
+  
   if(email == predefinedData.email){
     console.log('email is correct');
     isEmailSuccessed =true;
@@ -46,6 +57,7 @@ function submitFunction(){
   }
   if(isEmailSuccessed && isPasswordSucceed){
     console.log('correct email and password');
+    document.getElementById('error').style.opacity=1;
     window.localStorage.setItem('email', JSON.stringify(email));
     window.localStorage.setItem('password', JSON.stringify(password));
     location.replace('admin_panel.html');
@@ -54,9 +66,15 @@ function submitFunction(){
   }
   if(isEmailSuccessed !=true || isPasswordSucceed != true){
     console.log('Email or password is wrong');
+
+    document.getElementById('error').style.opacity=1;
+    messages.push('email or password is not correct');
+    errorElement.innerText = messages.join(",");
     // document.getElementById('login-error-msg-holder').innerText='Email or password is wrong';
   }
-}
+})
+
+
 
 
 
