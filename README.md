@@ -2,7 +2,7 @@
 
 ## HI I'm Linn Min Htet (RWD-1141)
 
-### Plant Zay (in the name of burmese) is the name of my Website. A plant ecommerce for minimalist.
+### Plant Zay (in the name of burmese) is the name of my Website. A plant ecommerce, especially for minimalist.
 
 First of all:\
 Please use live server extension from Vscode
