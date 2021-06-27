@@ -57,7 +57,7 @@ loginbtn.addEventListener('click',(e)=>{
   }
   if(isEmailSuccessed && isPasswordSucceed){
     // console.log('correct email and password');
-    document.getElementById('error').style.opacity=1;
+    //document.getElementById('error').style.opacity=1;
     window.localStorage.setItem('email', JSON.stringify(email));
     window.localStorage.setItem('password', JSON.stringify(password));
     location.replace('admin_panel.html');
