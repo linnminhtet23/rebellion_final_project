@@ -5,7 +5,7 @@ let predefinedData ={
   email :"linn@gmail.com",
   password : "john123",
 }
-console.log(predefinedData.email)
+// console.log(predefinedData.email)
 /*===== FOCUS =====*/
 const inputs = document.querySelectorAll(".form__input");
 ;
@@ -48,16 +48,16 @@ loginbtn.addEventListener('click',(e)=>{
 
   
   if(email == predefinedData.email){
-    console.log('email is correct');
+    // console.log('email is correct');
     isEmailSuccessed =true;
   }
   if(password == predefinedData.password){
-    console.log('password is correct ');
+    // console.log('password is correct ');
     isPasswordSucceed =true;
   }
   if(isEmailSuccessed && isPasswordSucceed){
-    console.log('correct email and password');
-    document.getElementById('error').style.opacity=1;
+    // console.log('correct email and password');
+    // document.getElementById('error').style.opacity=1;
     window.localStorage.setItem('email', JSON.stringify(email));
     window.localStorage.setItem('password', JSON.stringify(password));
     location.replace('admin_panel.html');
