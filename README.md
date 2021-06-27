@@ -4,11 +4,13 @@
 
 ### Plat Zay is the name of my Website.A plant ecommerce for minimalist.
 
-####Predefined data are:\
+Predefined data are:\
 email: linn@gmail.com\
 password: john123\
 
-####Screen Sorting:
+Screen sorting:\
+index.html(login)->admin_panel.html(if you click <-back button) -> home.html
+
 
 
 
