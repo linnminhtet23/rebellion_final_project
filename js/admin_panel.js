@@ -18,7 +18,7 @@ image.addEventListener("click", show);
 
 let email = document.getElementById("email");
 let getUserData = window.localStorage.getItem("email");
-console.log(getUserData);
+// console.log(getUserData);
 email.innerHTML = getUserData;
 let logoutbtn = document.getElementById("logout");
 logoutbtn.addEventListener("click",()=>{
