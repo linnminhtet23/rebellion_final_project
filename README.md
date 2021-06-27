@@ -16,7 +16,7 @@ plantdata.json
 
 
 Screen sorting:\
-index.html(login)->admin_panel.html (if you click <- back button) -> home.html
+index.html(login)->admin_panel.html (if you click <- Home button) -> home.html
 
 
 Enjoy My Project
