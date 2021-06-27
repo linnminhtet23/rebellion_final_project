@@ -1,9 +1,11 @@
-import { predefinedData } from "../json/mockdata.js";
-import {
-  docGetId,
-  getItemsFromLocalStorage,
-  setItemsToLocalStorage,
-} from "./commonfunction.js";
+let email, password;
+let isEmailSuccessed, isPasswordSucceed =false;
+
+let predefinedData ={
+  email :"linn@gmail.com",
+  password : "john123",
+}
+console.log(predefinedData.email)
 /*===== FOCUS =====*/
 const inputs = document.querySelectorAll(".form__input");
 ;
@@ -27,90 +29,34 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remfocus);
 });
 /*===submit==*/
-
-window.addEventListener(
-  "load",
-  function () {
-    let formElement = {
-      emailInput: docGetId("email"),
-      passwordInput: docGetId("password"),
-      loginBtn: docGetId("login-button"),
-      messageBox: docGetId("login-error-msg-holder"),
-    };
-
-    let getUserData = getItemsFromLocalStorage("userData");
+loginbtn = document.getElementById("login-button");
+loginbtn.addEventListener('click',()=>{
+  submitFunction();
+})
+function submitFunction(){
+  email = document.getElementById('email').value;
+  password = document.getElementById('password').value;
+  if(email == predefinedData.email){
+    console.log('email is correct');
+    isEmailSuccessed =true;
+  }
+  if(password == predefinedData.password){
+    console.log('password is correct ');
+    isPasswordSucceed =true;
+  }
+  if(isEmailSuccessed && isPasswordSucceed){
+    console.log('correct email and password');
+    window.localStorage.setItem('email', JSON.stringify(email));
+    window.localStorage.setItem('password', JSON.stringify(password));
+    location.replace('profile.html');
+   
     
-    formElement.emailInput.addEventListener("keyup", function () {
-      setItemsToLocalStorage("userData", formElement.emailInput.value, "", "");
-    });
-    formElement.loginBtn.addEventListener(
-      "click",
-      function () {
-        let emailInput = formElement.emailInput;
-        let passwordInput = formElement.passwordInput;
+  }
+  if(isEmailSuccessed !=true || isPasswordSucceed != true){
+    console.log('Email or password is wrong');
+    // document.getElementById('login-error-msg-holder').innerText='Email or password is wrong';
+  }
+}
 
-        setItemsToLocalStorage("userData", emailInput.value, "", "");
 
-        let messageBox = formElement.messageBox;
-        let isemailInputEmpty = emailInput.value === "";
-        let ispasswordInputEmpty = passwordInput.value === "";
-        var mailformat = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-        if (isemailInputEmpty) {
-          messageBox.style.opacity = 1;
-          messageBox.classList.remove("d-none");
-          messageBox.innerHTML = "Your Email is empty";
-
-          emailInput.focus();
-        } else if (ispasswordInputEmpty) {
-          messageBox.style.opacity = 1;
-          messageBox.classList.remove("d-none");
-          messageBox.innerHTML = "Your Password Input Is Empty.";
-
-          passwordInput.focus();
-        } else if (!emailInput.value.match(mailformat)) {
-          messageBox.style.opacity = 1;
-          messageBox.classList.remove("d-none");
-          messageBox.innerHTML = "Your Mail Format is not correct";
-
-          emailInput.focus();
-        } else {
-          let isEmailNotExist = emailInput.value !== predefinedData.email;
-          let isPasswordNotRight =
-            passwordInput.value !== predefinedData.password;
-          passwordInput.value !== predefinedData.password;
-          if (isEmailNotExist) {
-            messageBox.style.opacity = 1;
-            messageBox.classList.remove("d-none");
-            messageBox.innerHTML = "Email doesn't Exist.";
-            emailInput.focus();
-          }
-          if (isPasswordNotRight) {
-            messageBox.style.opacity = 1;
-            messageBox.classList.remove("d-none");
-            messageBox.innerHTML = "Wrong Password";
-            passwordInput.focus();
-          } else {
-            messageBox.classList.add("d-none");
-            setItemsToLocalStorage(
-              "userData",
-              emailInput.value,
-              passwordInput.value,
-              predefinedData.username
-            );
-            window.localtion.replace("../profile.html")
-            // console.log(window.location.replace("../profile.html").URL)
-            // console.log("hey");
-          }
-        }
-      },
-      false
-    );
-  },
-  false
-);
-
-//query selector only work for one
-//document.queryselector('ul li:last ofto')
-//group selector
-//document.querySelector('ul').getElementByClassName('collection-item')
