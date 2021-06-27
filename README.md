@@ -6,7 +6,8 @@
 
 predefined data are:\
 email: linn@gmail.com\
-password: john123
+password: john123\
+
 
 
 
